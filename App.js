@@ -1,17 +1,16 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import Box from './components/Box';
 
 export default function App() {
   return (
-    <View>
+    <View style={styles.container}>
+      <Box></Box>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    marginTop: 50,
   },
 });
