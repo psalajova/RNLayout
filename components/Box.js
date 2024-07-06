@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet } from "react-native";
 
-export default function Box() {
-    return <View style={styles.box}>
+export default function Box({ boxText, style }) {
+    return <View style={[styles.box, style]}>
         <Text style={styles.text}>
-            Box
+            {boxText}
         </Text>
     </View>
 }
@@ -17,5 +17,6 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: "bold",
         textAlign: "center",
-    }
+        color: "white",
+    },
 })
